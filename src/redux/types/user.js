@@ -1,0 +1,4 @@
+const GET_USER_BY_ID = "GET_USER_BY_ID";
+const GET_ALL_USERS = "GET_ALL_USERS";
+
+export { GET_USER_BY_ID, GET_ALL_USERS };
