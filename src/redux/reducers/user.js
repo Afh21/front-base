@@ -1,17 +1,16 @@
-import { IS_FETCHING_DATA } from "../types/global";
-import { GET_ALL_USERS } from "../types/user";
+import { GET_FETCHING_DATA_USERS, SET_DATA_USER } from "../types/user";
 
 const initialState = {};
 
 export default function(state = initialState, action) {
    switch (action.type) {
-      case IS_FETCHING_DATA:
+      case GET_FETCHING_DATA_USERS:
          return {
             ...state,
             loading: true
          };
 
-      case GET_ALL_USERS:
+      case SET_DATA_USER:
          return {
             ...state,
             loading: false,

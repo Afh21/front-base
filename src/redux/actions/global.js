@@ -1,10 +1,8 @@
-import { GET_ERROR, IS_FETCHING_DATA } from "../types/global";
-
-const doFetchingData = _ => ({ type: IS_FETCHING_DATA });
+import { GET_ERROR } from "../types/global";
 
 const doGetError = error => ({
    type: GET_ERROR,
    payload: error
 });
 
-export { doGetError, doFetchingData };
+export { doGetError };
